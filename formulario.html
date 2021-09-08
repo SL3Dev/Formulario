@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8"> <!-- ENTRA NA LING UNICOD -->
+   <link rel="stylesheet" type="text/css" href="formulario.css"
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <div>
+        <h1 id="titulo">Cadastro de player</h1>
+        <p id="subtitle  ">Complete suas informações</p> <!-- descrição do title -->
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo"> <!-- agrupador de campos-->
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required> <!-- entrada de valor input-->
+            </div>
+
+            <div class="campo">
+                <label for="Sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="nome" required>
+         
+            </div>
+        </fieldset>
+
+        <div class="campo"> 
+            <label for="Email">Email</label>
+            <input type="email" id="email" required>
+        </div>
+
+        <div class="campo"> 
+            <label><strong> tipo de player você é?</strong></label>
+            <label>
+                <input type="radio" name="duelista" value="frontend" checked> Sentinela
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend"> Controlador
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack"> Duelista
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="senioridade"><strong> Senioridade</strong></label>
+            <select id="senioridade">
+                <option selected disabled value="">Escolha</option>
+                <option>BRONZE</option>
+                <option>OURO</option>
+                <option>PLATINA</option>
+            </select>
+        </div>
+    </form>
+      <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+    <fieldset class="grupo">
+        <div>
+            <label><strong> Qual o seu champ favorito?</strong></label><br><br>
+            <input type="checkbox" id="tecno1" name="tecno1" value="Phoenix">
+            <label for="tecno1" >Phoenix</label>
+            <input type="checkbox" id="tecno2" name="tecno2" value="Yoru">
+            <label for="tecno2" >Yoru</label>
+            <input type="checkbox" id="tecno3" name="tecno3" value="Reyna">
+            <label for="tecno3" >Reyna</label>
+            <input type="checkbox" id="tecno4" name="tecno4" value="Jett">
+            <label for="tecno4" >Jett</label>
+            <input type="checkbox" id="tecno5" name="tecno5" value="Sage">
+            <label for="tecno5" >Sage</label>
+        </div>
+    </fieldset>
+
+      <!-- Caixa de texto -->
+    <div>
+        <br>
+        <label>Conte um pouco da sua exp:</label>
+        <textarea row="6"style="width: 24em" id="experiencia" name="experiencia"></textarea> <!-- cria um pequeno campo de text -->
+    </div>
+
+  <!-- Botão para enviar o formulário -->
+    <button class="botao" type="submitt">Concluído</button> <!-- submitt utilizado para o envio do form -->
+ 
+
+</body>
+
+</html>
